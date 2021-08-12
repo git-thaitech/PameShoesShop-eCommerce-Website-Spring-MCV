@@ -25,5 +25,12 @@ public class HomeController extends BaseController {
 		baseMV.setViewName("user/product");
 		return baseMV;
 	}
+	
+	@RequestMapping(value = { "/contact" }, method = RequestMethod.GET)
+	public ModelAndView Contact() {
+		
+		baseMV.setViewName("user/general/contact");
+		return baseMV;
+	}
 
 }

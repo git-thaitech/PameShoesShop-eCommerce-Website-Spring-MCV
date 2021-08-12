@@ -87,9 +87,9 @@
 	<div class="span9">
 		<ul class="breadcrumb">
 			<li><a href="<c:url value="/"/>">Home</a> <span class="divider">/</span></li>
-			<li class="active">Registration</li>
+			<li class="active">Login</li>
 		</ul>
-		<h3>Registration</h3>
+		<h3>Login</h3>
 		<hr class="soft" />
 
 
@@ -99,27 +99,11 @@
 
 
 		<div class="well">
-			<form:form class="form-horizontal" method="POST" action="register" modelAttribute="user">
+			<form:form class="form-horizontal" method="POST" action="login" modelAttribute="user">
 				<h3>Your Personal Details</h3>
 
 				<div class="control-group">
-					<label class="control-label" for="inputFname">First name <sup>*</sup></label>
-					<div class="controls">
-						<form:input type="text" placeholder="First Name" path="firstName"/>
-					</div>
-				</div>
-
-
-				<div class="control-group">
-					<label class="control-label" for="inputLname">Last name <sup>*</sup></label>
-					<div class="controls">
-						<form:input type="text" placeholder="Last Name" path="lastName"/>
-					</div>
-				</div>
-
-
-				<div class="control-group">
-					<label class="control-label" for="inputEmail">Email <sup>*</sup></label>
+					<label class="control-label">Email <sup>*</sup></label>
 					<div class="controls">
 						<form:input type="email" placeholder="Email" path="email"/>
 					</div>
@@ -129,31 +113,18 @@
 				<div class="control-group">
 					<label class="control-label">Password <sup>*</sup></label>
 					<div class="controls">
-						<form:input type="text" placeholder="Password" path="password"/>
+						<form:input type="password" placeholder="Password" path="password"/>
 					</div>
 				</div>
 				
 				<div class="control-group">
-					<label class="control-label">Address <sup>*</sup></label>
 					<div class="controls">
-						<form:input type="text" placeholder="Address" path="address"/>
-					</div>
-				</div>
-				
-				<div class="control-group">
-					<label class="control-label">Phone <sup>*</sup></label>
-					<div class="controls">
-						<form:input type="tel" placeholder="Phone" path="phone"/>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="controls">
-						<input type="submit" value="Register"
+						<input type="submit" value="Login"
 							class="exclusive shopBtn">
 					</div>
 				</div>
 				<div>
-				 <p style="margin: 0 auto;color:red; text-align: center"><i>${status}</i></p>
+				 <p style="color:green; text-align: center"><i>${status}</i></p>
 				</div>
 			</form:form>
 		</div>

@@ -10,7 +10,3 @@ public class BaseDAO {
 	public JdbcTemplate baseJdbcTemplate;
 }
 
-/*
- * INSERT INTO users(firstName, lastName, email, password, phoneNumber, address,
- * role) VALUES (v11,v12,...);
- */

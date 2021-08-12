@@ -33,9 +33,7 @@
 		</div>
 	</div>
 </section>
-<!--
-Footer
--->
+
 <footer class="footer">
 	<div class="row-fluid">
 		<div class="span2">
@@ -45,7 +43,7 @@ Footer
 			<a href="#">ORDER HISTORY</a><br>
 		</div>
 		<div class="span2">
-			<h5>Iinformation</h5>
+			<h5>Information</h5>
 			<a href="contact.html">CONTACT</a><br> <a href="#">SITEMAP</a><br>
 			<a href="#">LEGAL NOTICE</a><br> <a href="#">TERMS AND
 				CONDITIONS</a><br> <a href="#">ABOUT US</a><br>
@@ -67,23 +65,5 @@ Footer
 	</div>
 </footer>
 
-<!-- /container -->
 
-<div class="copyright">
-	<div class="container">
-		<p class="pull-right">
-			<a href="#"><img
-				src="<c:url value="/assets/user/img/maestro.png"/>" alt="payment"></a>
-			<a href="#"><img src="<c:url value="/assets/user/img/mc.png"/>"
-				alt="payment"></a> <a href="#"><img
-				src="<c:url value="/assets/user/img/pp.png"/>" alt="payment"></a>
-			<a href="#"><img src="<c:url value="/assets/user/img/visa.png"/>"
-				alt="payment"></a> <a href="#"><img
-				src="<c:url value="/assets/user/img/disc.png"/>" alt="payment"></a>
-		</p>
-		<span>Copyright &copy; 2013<br> bootstrap ecommerce
-			shopping template
-		</span>
-	</div>
-</div>
-<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
+

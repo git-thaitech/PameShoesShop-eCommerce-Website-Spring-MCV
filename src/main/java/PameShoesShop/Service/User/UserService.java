@@ -23,11 +23,21 @@ public class UserService {
 
 		return (listUsers.size() > 0) ? true : false;
 	}
-	
+
 	public int addANewAccount(Users user) {
 		user.setPassword(BCrypt.hashpw(user.getPassword(), BCrypt.gensalt(5)));
-		
+
 		return usersDAO.addAnUser(user);
+	}
+
+	public Users checkAccount(Users user) {
+		List<Users> list = usersDAO.getUsersByEmail(user.getEmail());
+		if (list.size() == 0)
+			return null;
+		else if (BCrypt.checkpw(user.getPassword(), list.get(0).getPassword()))
+			return list.get(0);
+
+		return null;
 	}
 
 }
