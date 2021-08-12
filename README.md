@@ -1,2 +1,4 @@
 # ecommerce-springmvc
- Ecommerce Website (Spring MVC, MySQL)
+Spring MVC, JBDC, MySQL, XAMPP
+
+
